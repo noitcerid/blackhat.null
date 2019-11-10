@@ -1,4 +1,4 @@
-from Server import Server
+from classes.Server import Server
 
 s1contents = ["File A.txt", "File B.txt", "File C.jpg"]
 s2contents = [["1234", "John Smith", 123.45], ["2345", "Suzie Sanders", 524.12]]

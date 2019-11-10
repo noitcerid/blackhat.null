@@ -2,7 +2,7 @@
 This is the server class.
 """
 
-from Contents import Contents
+from classes.Contents import Contents
 
 SECURITY_LEVELS = [1, 2, 3, 4]
 

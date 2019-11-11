@@ -4,52 +4,57 @@ Hacker class
 
 
 class Hacker:
-    name: str
-    alias: str
-    password: str
-    rank: int
-    rating: int
-    badges: list = None
+    def __init__(self, name, alias, password, rank, rating, badges):
+        self._name = name
+        self._alias = alias
+        self._password = password
+        self._rank = rank
+        self._rating = rating
+        self._badges = badges
 
-    def __init__(self, name, alias, password, rank, rating):
-        self.name = name
-        self.alias = alias
-        self.password = password
-        self.rank = rank
-        self.rating = rating
+    @property
+    def name(self):
+        return self._name
 
-    def get_name(self):
-        return self.name
+    @property
+    def alias(self):
+        return self._alias
 
-    def get_alias(self):
-        return self.alias
+    @property
+    def password(self):
+        return self._password
 
-    def get_password(self):
-        return self.password
+    @property
+    def rank(self):
+        return self._rank
 
-    def get_rank(self):
-        return self.rank
+    @property
+    def rating(self):
+        return self._rating
 
-    def get_rating(self):
-        return self.rating
+    @property
+    def badges(self):
+        return self._badges
 
-    def get_badges(self):
-        return self.badges
+    @name.setter
+    def name(self, name):
+        self._name = name
 
-    def set_name(self, name):
-        self.name = name
+    @alias.setter
+    def alias(self, alias):
+        self._alias = alias
 
-    def set_alias(self, alias):
-        self.alias = alias
+    @password.setter
+    def password(self, password):
+        self._password = password
 
-    def set_password(self, password):
-        self.password = password
+    @rank.setter
+    def rank(self, rank):
+        self._rank = rank
 
-    def set_rank(self, rank):
-        self.rank = rank
-
-    def set_rating(self, rating):
-        self.rating = rating
+    @rating.setter
+    def rating(self, rating):
+        self._rating = rating
 
     def add_badge(self, badge):
-        self.badges.append(badge)
+        self._badges.append(badge)

@@ -7,11 +7,8 @@ BADGES = [[1, "Beginner's Luck", "Make your first hack"],
 
 
 class Badge:
-    badge_id: int
-    name: str
-    description: str
-
     def __init__(self, badge_id, name, description):
-        self.badge_id = badge_id
-        self.name = name
-        self.description = description
+        # TODO: Make private and establish proper get/sets
+        self.badge_id: int = badge_id
+        self.name: str = name
+        self.description: str = description

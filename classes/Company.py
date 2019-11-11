@@ -6,22 +6,15 @@ from classes import Employee
 
 
 class Company:
-    id: int
-    name: str
-    description: str
-    size: int
-    revenue: float
-    formed: int
-    employees: list
-
-    def __init__(self, id, name, description, size, revenue, formed, employees=None):
-        self.id = id
-        self.name = name
-        self.description = description
-        self.size = size
-        self.revenue = revenue
-        self.formed = formed
-        self.employees = employees
+    def __init__(self, company_id, name, description, size, revenue, formed, employees=None):
+        # TODO: Make these private and establish proper get/sets
+        self.company_id: int = company_id
+        self.name: str = name
+        self.description: str = description
+        self.size: int = size
+        self.revenue: float = revenue
+        self.formed: int = formed
+        self.employees: list = employees
 
     def set_name(self, name):
         self.name = name

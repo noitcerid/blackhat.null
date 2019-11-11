@@ -13,9 +13,6 @@ manages to hold it's own. Some of the data is slightly dated, but was also a fic
 This folder is (as the name implies) for the classes utilized in the application. Having these in a standard location
 allows for a more organized structure and avoids cluttering the "main" application folder. 
 
-### documentation
-Should be moved to the README.md at this point... :)
-
 ### tests
 Contains test classes, which should be grouped by class. Future testing around interactivity of classes will
 likely be an additional task once that comes together more. 

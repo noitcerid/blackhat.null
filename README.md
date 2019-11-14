@@ -24,13 +24,17 @@ There is a lot of remaining work to finish the core classes around the interacti
 initial elements should allow for the basic understanding of where I'm attempting to get to in the class.
 
 Additional classes need to be added to allow for functionality like giving a "hacker" a way to be able to expand their
-physical machine to speed up processing, data transfers, etc. Networks could be another realm to provide an interface 
+physical machine (Workstation) to speed up processing (Processor), data transfers (Network), Storage Capacity (Disk), 
+and RAM (Memory) to provide additional speed/performance.
+
+Networks could be another realm to provide an interface 
 for breaking into.
 
 ### Application interface
 The intention is to leave the application as a "console" to give it more of a basic feel and stick to more traditional 
 command-line hacking techniques. I'm open to suggestions if anyone feels strongly or can provide UI enhancements to make
-it a bit more friendly, but I overall enjoy the simplicity it offers.
+it a bit more friendly, but I overall enjoy the simplicity it offers (and who isn't nostalgic about seeing a blinking
+underscore?)
 
 ### API
 Longer term, it may make sense to give this a back-end API that could be then set to make remote calls and allow for

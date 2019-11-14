@@ -1,6 +1,8 @@
 from classes.Server import Server
 from classes.Employee import Employee
 from classes.Company import Company
+from classes.Network import Network
+from classes.Disk import Disk
 
 # s1contents = ["File A.txt", "File B.txt", "File C.jpg"]
 # s2contents = [["1234", "John Smith", 123.45], ["2345", "Suzie Sanders", 524.12]]
@@ -15,10 +17,16 @@ from classes.Company import Company
 # print(s2)
 # print(s3)
 
-e1 = Employee(1, "Bob", "Smith", "111-22-3333", "111-222-3333", "123 Anywhere Rd.", "Orlando", "FL", "32830", None,
-              "Network Engineer", 123200.00, ["Network Security, Class 1"])
+# e1 = Employee(1, "Bob", "Smith", "111-22-3333", "111-222-3333", "123 Anywhere Rd.", "Orlando", "FL", "32830", None,
+#               "Network Engineer", 123200.00, ["Network Security, Class 1"])
+#
+# c1 = Company(1, "Bob's Computer Services", "Fixing your computer problems since 1992!", 4, 100000, 1992, [e1])
+#
+# print(e1)
+# print(c1)
 
-c1 = Company(1, "Bob's Computer Services", "Fixing your computer problems since 1992!", 4, 100000, 1992, [e1])
+n1 = Network("Gigawatts Wifi B v1", "Wireless B Adapter", 100, 1, 1, 1)
+# d1 = Disk("MaxSpace Slow HDD", "Standard Slow HDD", 100, 1, 10)
 
-print(e1)
-print(c1)
+print(n1.name)
+print(n1.bandwidth)

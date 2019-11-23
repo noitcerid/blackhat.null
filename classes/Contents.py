@@ -16,6 +16,9 @@ class Contents:
     def remove_data(self, data):
         self.data.remove(data)
 
+    def update_data(self, data_to_update, new_data):
+        self.data = [new_data if item == data_to_update else item for item in self.data]
+
 
 class File(Contents):
     def __init__(self, files: list):
@@ -41,7 +44,13 @@ class Bank(Contents):
     def remove_account(self, account):
         self.accounts.remove(account)
 
-    # TODO: Add additional functions for altering balances
+    # TODO: Need to refactor account, once class is built ([account_num, account_owner, account_balance])
+    def update_account_balance(self, account_to_update, amount):
+        for account in self.accounts:
+            if account == account_to_update:
+                account[2] = account[2] + amount
+                return True
+        return False
 
 
 class Database(Contents):

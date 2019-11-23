@@ -27,8 +27,17 @@ Additional classes need to be added to allow for functionality like giving a "ha
 physical machine (Workstation) to speed up processing (Processor), data transfers (Network), Storage Capacity (Disk), 
 and RAM (Memory) to provide additional speed/performance.
 
-Networks could be another realm to provide an interface 
-for breaking into.
+Networks could be another realm to provide an interface for breaking into.
+
+Workstation "Operating System" should utilize menu-driven options, such as:
+- File Utilities
+- Hardware Drivers
+- Crackers
+- Bypassers
+- Network Tools
+- Other
+
+Possibly leverage mockaroo (or similar) library to pre-populate initial dataset for servers and employees 
 
 ### Application interface
 The intention is to leave the application as a "console" to give it more of a basic feel and stick to more traditional 

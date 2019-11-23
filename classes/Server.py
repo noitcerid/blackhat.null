@@ -4,7 +4,7 @@ This is the server class.
 
 from classes.Contents import Contents
 
-SECURITY_LEVELS = [1, 2, 3, 4]
+SECURITY_LEVELS = [1, 2, 3, 4, 5, 6, 7]
 
 
 class Server:
@@ -18,6 +18,10 @@ class Server:
 
     def get_properties(self):
         return [self.server_id, self.name, self.server_type, self.ip_address, self.security_level, self.contents]
+
+    def search_contents(self, search_string):
+        if search_string in self.contents:
+            return self.contents
 
     def __str__(self):
         result = "Server ID: " + str(self.server_id) + \

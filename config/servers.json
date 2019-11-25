@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "Test Server 1",
+  "type": "File",
+  "ip_address": "1.1.1.1",
+  "security_level": 1,
+  "contents": {
+    "file_name": "file1.dat",
+    "file_contents": "Some text data",
+    "file_size": 4
+  }
+}

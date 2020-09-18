@@ -1,5 +1,5 @@
 """
-This class contains details around the contents of a server, mostly based on it's type. Will contain one of the following:
+This class contains details around the contents of a server, mostly based on its type. Will contain one of the following:
 - Files - Contain a set of metadata for a file
 - Banks Accounts - Contain metadata for account
 - Databases - Contains a list of tables/rows
@@ -18,6 +18,9 @@ class Contents:
 
     def update_data(self, data_to_update, new_data):
         self.data = [new_data if item == data_to_update else item for item in self.data]
+
+    def __str__(self):
+        return str(self.data)
 
 
 class File(Contents):

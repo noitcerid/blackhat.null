@@ -12,4 +12,4 @@ class Workstation:
         self.cost: float = cost
         self.total_space: int = total_space
         # TODO: Map out total space requirements per component
-        self.components: list[WorkstationComponent] = components
+        self.components: [WorkstationComponent] = components

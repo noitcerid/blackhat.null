@@ -17,18 +17,18 @@ class Server:
         self.contents: Contents = contents
 
     def get_properties(self):
-        return [self.server_id, self.name, self.server_type, self.ip_address, self.security_level, self.contents]
+        return [self.id, self.name, self.type, self.ip_address, self.security_level, self.contents]
 
     def search_contents(self, search_string):
         if search_string in self.contents:
             return self.contents
 
     def __str__(self):
-        result = "Server ID: " + str(self.server_id) + \
-                 "\nServer Name: " + self.name + \
-                 "\nServer Type: " + self.server_type + \
-                 "\nIP Address: " + self.ip_address + \
-                 "\nSecurity Level: " + str(self.security_level) + \
-                 "\nContents: " + str(self.contents)
-
-        return result
+        return (
+                f"Server ID: {self.id}\n"
+                f"Server Name: {self.name}\n"
+                f"Server Type: {self.type}\n"
+                f"IP Address: {self.ip_address}\n"
+                f"Security Level: {self.security_level}\n"
+                f"Contents: {self.contents}"
+        )

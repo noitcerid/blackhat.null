@@ -13,10 +13,19 @@ class Company:
         self.size: int = size
         self.revenue: float = revenue
         self.formed: int = formed
-        self.employees: list = employees
+        self.employees: [Employee] = employees
 
     def add_employee(self, employee):
         self.employees.append(employee)
 
     def remove_employee(self, employee):
         self.employees.remove(employee)
+
+    def __str__(self):
+        return (
+            f"Details for {self.name} ({self.company_id}):\n"
+            f"\tDescription: {self.description}\n"
+            f"\tSize: {self.size}\n"
+            f"\tRevenue: {self.revenue}\n"
+            f"\tFormed: {self.formed}"
+        )
